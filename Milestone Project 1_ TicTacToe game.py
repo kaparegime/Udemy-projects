@@ -2,8 +2,8 @@ from random import randint
 board = ['#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']  # creat bord for collect cells from numlock which will use
 position = []
 print('Welcome to TIC TAC TOE game!!!')
-game = input("Input 'Yes' for start game or 'No' if you don't want play: ").lower()
-if game == 'yes':
+game = input("Input 'Yes' to start game or 'No' if you don't want play: ")
+if game[0].lower() == 'y':
     player_1 = input('Player 1: Do you want to be X or O ? ').upper()
     if player_1 == 'X':
         player_2 = 'O'
