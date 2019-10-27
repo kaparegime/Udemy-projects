@@ -4,7 +4,9 @@ position = []
 print('Welcome to TIC TAC TOE game!!!')
 game = input("Input 'Yes' for start game or 'No' if you don't want play: ").lower()
 if game == 'yes':
-    player_1 = input('Player 1: Do you want to be X or O ? ').upper()
+    player_1 = ''
+    while player_1 != 'X' and player_1 != 'O':
+        player_1 = input('Player 1: Do you want to be X or O ? ').upper()
     if player_1 == 'X':
         player_2 = 'O'
     else:
